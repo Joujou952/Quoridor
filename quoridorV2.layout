@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
+	<ActiveTarget name="Release" />
+	<File name="run.c" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4817" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="fonctions_run.c" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5242" topLine="116" />
+		</Cursor>
+		<Folding>
+			<Collapse line="3" />
+			<Collapse line="31" />
+			<Collapse line="148" />
+			<Collapse line="331" />
+			<Collapse line="382" />
+			<Collapse line="410" />
+		</Folding>
+	</File>
+	<File name="initialisation.c" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3321" topLine="5" />
+		</Cursor>
+		<Folding>
+			<Collapse line="2" />
+			<Collapse line="8" />
+			<Collapse line="32" />
+			<Collapse line="42" />
+			<Collapse line="49" />
+			<Collapse line="117" />
+			<Collapse line="124" />
+			<Collapse line="148" />
+		</Folding>
+	</File>
+	<File name="en_tete.h" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="809" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="main.c" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="37" topLine="0" />
+		</Cursor>
+	</File>
+</CodeBlocks_layout_file>

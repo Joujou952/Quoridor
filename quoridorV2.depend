@@ -1,0 +1,36 @@
+# depslib dependency file v1.0
+1639326819 source:c:\users\egall\onedrive - groupe inseec (poce)\algo_prog_structuree\test_codblok_c\projet_quoridor\quoridorv2\initialisation.c
+	"en_tete.h"
+
+1639335692 c:\users\egall\onedrive - groupe inseec (poce)\algo_prog_structuree\test_codblok_c\projet_quoridor\quoridorv2\en_tete.h
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+
+1639073405 source:c:\users\egall\onedrive - groupe inseec (poce)\algo_prog_structuree\test_codblok_c\projet_quoridor\quoridorv2\main.c
+	"en_tete.h"
+
+1639341702 source:c:\users\egall\onedrive - groupe inseec (poce)\algo_prog_structuree\test_codblok_c\projet_quoridor\quoridorv2\fonctions_run.c
+	"en_tete.h"
+
+1639342414 source:c:\users\egall\onedrive - groupe inseec (poce)\algo_prog_structuree\test_codblok_c\projet_quoridor\quoridorv2\run.c
+	"en_tete.h"
+
+1639341702 source:c:\users\egall\onedrive - groupe inseec (poce)\algo_prog_structuree\test_codblok_c\projet_quoridor\quoridorv2.3\fonctions_run.c
+	"en_tete.h"
+
+1639354502 c:\users\egall\onedrive - groupe inseec (poce)\algo_prog_structuree\test_codblok_c\projet_quoridor\quoridorv2.3\en_tete.h
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<time.h>
+
+1639326819 source:c:\users\egall\onedrive - groupe inseec (poce)\algo_prog_structuree\test_codblok_c\projet_quoridor\quoridorv2.3\initialisation.c
+	"en_tete.h"
+
+1639073405 source:c:\users\egall\onedrive - groupe inseec (poce)\algo_prog_structuree\test_codblok_c\projet_quoridor\quoridorv2.3\main.c
+	"en_tete.h"
+
+1639354621 source:c:\users\egall\onedrive - groupe inseec (poce)\algo_prog_structuree\test_codblok_c\projet_quoridor\quoridorv2.3\run.c
+	"en_tete.h"
+

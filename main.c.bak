@@ -1,0 +1,85 @@
+#include "en_tete.h"
+
+int main()
+{
+    //début initialisation partie
+    srand(time(NULL));
+    char type_pion[8]={'@','*','#','&','%','?','£','$'};//tab des pions
+    char coord_pions[4][2];
+    int i=0,nbr_joueur=0,choix_nbr_j=0,j=1;
+    int tour=0, doublon=0,quite=0;
+    menu* biblio = (int*)malloc(nbr_joueur*sizeof(int));
+
+    if(biblio==NULL)
+    {
+        printf("erreur de malloc\n");
+        return 1;
+    }
+    while(choix_nbr_j!=1)//tant que le choix est différent de 1
+    {
+        printf("saisir le nombre de joueur:\n");//on demamde à l'utilisateur le nombres de joueuer
+        scanf("%d",&nbr_joueur);
+        fflush(stdin);//vider le buffer
+        switch(nbr_joueur)
+        {
+            case 2://si c'est 2
+                choix_nbr_j=1;//on ajoute 1
+                break;//on sort de la boucle
+            case 4://si c'est 4
+                choix_nbr_j=1;//on ajoute 1
+                break;//on sort
+        }
+    }
+    do
+    {
+        i=rand()%8-1;//i prend une nouvelle valeur
+
+        while(type_pion[i]==NULL)//tant que la valeur du tab à l'emplacement i est NULL
+        {
+            i=rand()%8-1;//i prend une nouvelle valeur
+        }
+        biblio[j][j-1] = j;
+        biblio[j].jeton = type_pion[i];//attribue le jeton au joueur correspondant
+        printf("saisir le prenom du joueur[%d]\n",j);
+        gets(biblio[j].prenom);//retour des noms des joueurs
+        type_pion[i]=NULL;//la valeur du tableau à la case i est remplacé par rien
+        j++;//on incrémente notre compteur
+
+    }while(j<=nbr_joueur);//la boucle tourne tant que le compteur est inféreieur ou égale au nombre de joueur
+
+    for(int i=1;i<=nbr_joueur;i++)//pour i inféereieur au nombre de joueur
+    {
+        biblio[i].score_partie = 0;//initialisation du score à 0
+        biblio[i].barriere = 20;//initialisation du nombre de barrière à 20
+    }
+    //fin initialisation partie
+
+
+    gotoligcol(0,0);
+    generation_plateau();
+
+    do
+    {
+        tour = rand()%2+1;
+
+        while(tour==doublon)//si c et le doublon ont la même valeur
+        {
+            tour = rand()%2+1;//c à une valeur aléatoire
+        }
+
+        info_partie(&biblio[tour]);//afficher les donner de la structure
+        doublon = tour;// on lui ajoute la valeur de c
+        gotoligcol(12,60);
+        printf("1 pour quitter 0 pour continuer:\n");// à enlever aprés avoir fait le menu des commande
+        gotoligcol(14,60);
+        scanf("%d",&quite);
+        fflush(stdin);
+        tour=0;
+
+    }while(quite==0);
+
+
+    gotoligcol(25,0);
+
+    return 0;
+}
